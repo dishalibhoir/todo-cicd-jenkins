@@ -18,11 +18,11 @@ describe("Simple Calculations", () => {
         });
 
         it("Is returning 5 when adding 2 + 3", () => {
-            assert.equal(2 + 3, 5);
+            assert.strictEqual(2 + 3, 5);  // Using strictEqual
         });
 
         it("Is returning 6 when multiplying 2 * 3", () => {
-            assert.equal(2 * 3, 6);
+            assert.strictEqual(2 * 3, 6);  // Using strictEqual
         });
     });
 
@@ -32,11 +32,11 @@ describe("Simple Calculations", () => {
         });
 
         it("Is returning 5 when adding 2 + 3", () => {
-            assert.equal(2 + 3, 5);
+            assert.strictEqual(2 + 3, 5);  // Using strictEqual
         });
 
         it("Is returning 8 when multiplying 2 * 4", () => {
-            assert.equal(2 * 4, 8);
+            assert.strictEqual(2 * 4, 8);  // Using strictEqual
         });
     });
 });
