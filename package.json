@@ -21,4 +21,9 @@
     "nyc": "^14.1.1",
     "supertest": "^4.0.2"
   }
+  "scripts": {
+  "start": "node app.js",
+  "test": "node test.js",
+  "lint:js": "eslint ."
+  }
 }
