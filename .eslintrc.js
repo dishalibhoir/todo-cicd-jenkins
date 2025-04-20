@@ -1,3 +1,4 @@
+console.log('Using ESLint config');
 module.exports = {
   env: {
     browser: true,
@@ -12,6 +13,6 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
-    'semi': ['error', 'always'],
+    semi: ['error', 'always'],
   },
 };
