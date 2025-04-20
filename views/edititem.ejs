@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
     <head>
@@ -9,16 +8,16 @@
                 text-decoration: none;
                 color: black;
             }
-
         </style>
     </head>
 
     <body>
         <h1>Edit <%- todo %>:</h1>
+        <!-- Ensure PUT method handling -->
         <form action="/todo/edit/<%= todoIdx %>" method="post">
+            <input type="hidden" name="_method" value="PUT">
             <p>
                 <label for="editTodo">Change to:</label>
-                <input type="hidden" name="_method" value="PUT">
                 <input type="text" name="editTodo" id="editTodo" autofocus placeholder="<%- todo %>" />
                 <input type="submit" value="Save" />
             </p>
